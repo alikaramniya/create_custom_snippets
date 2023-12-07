@@ -4,9 +4,9 @@
 
 ## Reference
 
-### [ultisnips](https://github.com/SirVer/ultisnips)
+##### [ultisnips](https://github.com/SirVer/ultisnips)
 
-### [Snippets in Vim](https://blog.prismatik.com.au/snippets-in-vim-43cf2ad79000)
+##### [Snippets in Vim](https://blog.prismatik.com.au/snippets-in-vim-43cf2ad79000)
 
 ### قدم اول
 
@@ -53,4 +53,4 @@ endsnippet
 
 با کنترل j و کنترل k میتونیم که بین قسمت های مختلف snippet خودمون جا به جا شیم
 
-### زمانی که مینویسیم $0 این نقطه پایانی snippet ما هست
+##### زمانی که مینویسیم 0$ این نقطه پایانی snippet ما هست
