@@ -54,3 +54,10 @@ endsnippet
 با کنترل j و کنترل k میتونیم که بین قسمت های مختلف snippet خودمون جا به جا شیم
 
 ##### زمانی که مینویسیم 0$ این نقطه پایانی snippet ما هست
+
+##### اگر دوست دارین کانفیگ من رو برای php استفاده کیند ککافیه که فایل php.snippets رو توی مسیر پایین به جای php.snippets که هنگام پلاگین ها برای شما قرار میگره قرار بدین و جایگیزین کنین
+
+```
+rm ~/.vim/plugged/vim-snippets/UltiSnips/php.snippets
+mv php.snippets ~/.vim/plugged/vim-snippets/UltiSnips/
+```
