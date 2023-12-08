@@ -62,6 +62,18 @@ function ${1:function_name}`!p snip.rv = space_before_function_paren(snip)`(${2:
 }
 endsnippet
 
+snippet gebi "getElementById" b
+${1:let} ${2:element} = document.getElementById(${3:tagId});$0
+endsnippet
+
+snippet gebcn "getElementsByClassName" b
+${1:let} ${2:element} = document.getElementsByClassName(${3:className});$0
+endsnippet
+
+snippet gebtn "getElementsByTagName" b
+${1:let} ${2:element} = document.getElementsByTagName(${3:tagName});$0
+endsnippet
+
 snippet vf "function (assigned to var)"
 ${1:var }${2:function_name} = function $2`!p snip.rv = space_before_function_paren(snip)`($3) {
 	${VISUAL}$0
@@ -159,7 +171,7 @@ import ${2} from ${1}
 endsnippet
 
 snippet adev "addEventListener"
-${1}.addEventListener(${2}, ${3})
+${1:wrapper}.addEventListener("${2:event}", ${3:listener})
 endsnippet
 
 # Debugging
