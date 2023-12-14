@@ -281,3 +281,40 @@ snippet kv "key => value" b
 endsnippet
 
 # :vim:ft=snippets:
+
+#Route
+snippet Rget "Route::get()" b
+Route::get('${1:address}', ${2:[${3:ControllerName}::class, ${4:method}]})${5:->name(${6:route.name})};
+endsnippet
+
+snippet Rpost "Route::post()" b
+Route::post('${1:address}', ${2:[${3:ControllerName}::class, ${4:method}]})${5:->name(${6:route.name})};
+endsnippet
+
+snippet Rdelete "Route::delete()" b
+Route::delete('${1:address}', ${2:[${3:ControllerName}::class, ${4:method}]})${5:->name(${6:route.name})};
+endsnippet
+
+snippet Rpatch "Route::patch()" b
+Route::patch('${1:address}', ${2:[${3:ControllerName}::class, ${4:method}]})${5:->name(${6:route.name})};
+endsnippet
+
+snippet Rpatch "Route::patch()" b
+Route::patch('${1:address}', ${2:[${3:ControllerName}::class, ${4:method}]})${5:->name(${6:route.name})};
+endsnippet
+
+snippet Rpatch "Route::put()" b
+Route::put('${1:address}', ${2:[${3:ControllerName}::class, ${4:method}]})${5:->name(${6:route.name})};
+endsnippet
+
+snippet Rview "Route::view()"
+Route::view('${1:url}', '${2:view}')${3:->name('${4:route.name}')};
+endsnippet
+
+snippet Rgroup "Route::group()" b
+Route::group(
+	${1:[${2}], }function() {
+	${3}
+});
+endsnippet
+
