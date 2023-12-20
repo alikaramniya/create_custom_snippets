@@ -309,7 +309,7 @@ endsnippet
 
 snippet Rgroup "Route::group()" b
 Route::group(
-	${1:[${2}], }function() {
+${1:	[${2}], }function() {
 	${3}
 });
 endsnippet
@@ -322,4 +322,27 @@ snippet Rresources "Route::resources()" b
 Route::resources([
 	'${1:address}' => ${2:ControllerName}::class,${3}
 ]);
+endsnippet
+
+snippet booted "booted global scope" b
+protected static function booted(): void
+{
+	static::addGlobalScope('${1:nameScope}', ${2:function (Builder${3} $query) {${4}}});
+}
+endsnippet
+
+snippet boot "boot global scope" b
+protected static function boot(): void
+{
+	parent::boot();
+
+	static::addGlobalScope('${1:nameScope}', ${2:function (Builder${3} $query) {${4}}});
+}
+endsnippet
+
+snippet scope "local scope" b
+public function scope${1:scopeName}(Builder${2} $query${3, ${4}}): void
+{
+	$query->${5};
+}
 endsnippet
