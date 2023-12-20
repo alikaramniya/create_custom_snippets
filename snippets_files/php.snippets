@@ -341,7 +341,7 @@ protected static function boot(): void
 endsnippet
 
 snippet scope "local scope" b
-public function scope${1:scopeName}(Builder${2} $query${3, ${4}}): void
+public function scope${1:scopeName}(Builder${2} $query${3:, ${4}}): void
 {
 	$query->${5};
 }
