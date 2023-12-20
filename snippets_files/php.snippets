@@ -346,3 +346,15 @@ public function scope${1:scopeName}(Builder${2} $query${3:, ${4}}): void
 	$query->${5};
 }
 endsnippet
+
+snippet with "$with relation" b
+protected $with = ['${1:products}'];
+endsnippet
+
+snippet withCount "$withCount relation" b
+protected $withCount = ['${1:products}'];
+endsnippet
+
+snippet fillable "$fillable controll data" b
+protected $fillable = ['${1:field}'];
+endsnippet
