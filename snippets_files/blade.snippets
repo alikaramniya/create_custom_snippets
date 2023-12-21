@@ -144,4 +144,13 @@ snippet link "<link /> blade" i
 <link rel="stylesheet" href="${2:{{ asset($1) }}}"/>
 endsnippet
 
+snippet use "@use() blade" i
+@use('${1}')
+endsnippet
+
+snippet session "@session() blade" i
+@session('${1:success}')
+	<span class="${3:class-name}">{{ $value }}</span>${2}
+@endsession
+endsnippet
 # vim:ft=snippets:
