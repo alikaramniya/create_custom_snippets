@@ -336,7 +336,7 @@ protected static function boot(): void
 {
 	parent::boot();
 
-	static::addGlobalScope('${1:nameScope}', ${2:function (Builder${3} $query) {${4}}});
+	static::addGlobalScope('${1:nameScope}', ${2:function (Builder${3} $query) {${4}}\});
 }
 endsnippet
 
@@ -351,10 +351,27 @@ snippet with "$with relation" b
 protected $with = ['${1:products}'];
 endsnippet
 
-snippet withCount "$withCount relation" b
-protected $withCount = ['${1:products}'];
-endsnippet
-
 snippet fillable "$fillable controll data" b
 protected $fillable = ['${1:field}'];
+endsnippet
+
+snippet belongsTo "blongsTo() Relation" b
+public function belongsTo(): BelongsTo${1}
+{
+	return $this->belongsTo(${2:User}::class, '${3:user_id}');
+}
+endsnippet
+
+snippet hasMany "hasMany() Relation" b
+public function hasMany(): HasMany${1}
+{
+	return $this->hasMany(${2:User}::class, '${3:user_id}');
+}
+endsnippet
+
+snippet belongsToMany "belongsToMany() Relation" b
+public function belongsToMany(): BelongsToMany${1}
+{
+	return $this->belongsToMany(${2:User}::class, '${3:tableName}', '${4:model_id}', ${5:'user_id'});
+}
 endsnippet
