@@ -356,22 +356,22 @@ protected $fillable = ['${1:field}'];
 endsnippet
 
 snippet belongsTo "blongsTo() Relation" b
-public function belongsTo(): BelongsTo${1}
+public function ${1:user}(): BelongsTo${2}
 {
-	return $this->belongsTo(${2:User}::class, '${3:user_id}');
+	return $this->belongsTo(${3:User}::class, '${4:user_id}');
 }
 endsnippet
 
 snippet hasMany "hasMany() Relation" b
-public function hasMany(): HasMany${1}
+public function ${1:posts}(): HasMany${2}
 {
-	return $this->hasMany(${2:User}::class, '${3:user_id}');
+	return $this->hasMany(${3:Post}::class, '${4:user_id}');
 }
 endsnippet
 
 snippet belongsToMany "belongsToMany() Relation" b
-public function belongsToMany(): BelongsToMany${1}
+public function ${1:tags}(): BelongsToMany${2}
 {
-	return $this->belongsToMany(${2:User}::class, '${3:tableName}', '${4:model_id}', ${5:'user_id'});
+	return $this->belongsToMany(${3:Tag}::class, '${4:tableName}', '${5:model_id}', ${6:'user_id'});
 }
 endsnippet
