@@ -62,16 +62,16 @@ function ${1:function_name}`!p snip.rv = space_before_function_paren(snip)`(${2:
 }
 endsnippet
 
-snippet bi "getElementById"
-document.getElementById('${1:wrapper}');$0
+snippet gebi "getElementById" b
+${1:let} ${2:wrapper} = document.getElementsByClassName('${3:$2}');$0
 endsnippet
 
-snippet bcn "getElementsByClassName"
-document.getElementsByClassName('${1:className}');$0
+snippet gebcn "getElementsByClassName" b
+${1:let} ${2:container} = document.getElementsByClassName('${3:$2}');$0
 endsnippet
 
-snippet btn "getElementsByTagName"
-document.getElementsByTagName('${1:div}');$0
+snippet gebtn "getElementsByTagName" b
+${1:let} ${2:div} = document.getElementsByTagName('${3:$2}');$0
 endsnippet
 
 snippet qs "querySelector"
