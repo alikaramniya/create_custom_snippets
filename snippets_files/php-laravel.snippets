@@ -393,7 +393,7 @@ snippet belongsToMany "belongsToMany() Relation" b
  */
 public function ${1:tags}(): BelongsToMany${2}
 {
-	return $this->belongsToMany(${4:Tag}::class, '${5:tableName}', '${6:model_id}', ${7:'user_id'});
+	return $this->belongsToMany(${4:Tag}::class, '${5:post_tag}', '${6:post_id', '${7:tag_id}');
 }
 endsnippet
 
