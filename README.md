@@ -60,5 +60,5 @@ endsnippet
 ```
 cd ~/.vim/plugged/vim-snippets/UltiSnips
 rm {all,blade,html,javascript,php-laravel,php}.snippets
-mv *.snippets ~/.vim/plugged/vim-snippets/UltiSnips/
+mv ~/create_custom_snippets/snippets_files/*.snippets ~/.vim/plugged/vim-snippets/UltiSnips/
 ```
