@@ -58,6 +58,7 @@ endsnippet
 ##### اگر دوست دارین کانفیگ من رو برای php استفاده کیند ککافیه که فایل php.snippets رو توی مسیر پایین به جای php.snippets که هنگام پلاگین ها برای شما قرار میگره قرار بدین و جایگیزین کنین
 
 ```
-rm ~/.vim/plugged/vim-snippets/UltiSnips/php.snippets
-mv php.snippets ~/.vim/plugged/vim-snippets/UltiSnips/
+cd ~/.vim/plugged/vim-snippets/UltiSnips
+rm {all,blade,html,javascript,php-laravel,php}.snippets
+mv *.snippets ~/.vim/plugged/vim-snippets/UltiSnips/
 ```
