@@ -153,4 +153,24 @@ snippet session "@session() blade" i
 	<span class="${3:class-name}">{{ $value }}</span>${2}
 @endsession
 endsnippet
+
+snippet guest "@guest @endguest blade" b
+@guest
+	$0
+@endguest
+endsnippet
+
+snippet auth "@auth @endauth blade" b
+@auth
+	$0
+@endauth
+endsnippet
+
+snippet authe "@auth @else @endauth blade" b
+@auth
+	${1}
+@else
+	${2}
+@endauth
+endsnippet
 # vim:ft=snippets:

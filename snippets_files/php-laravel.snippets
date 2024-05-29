@@ -321,18 +321,6 @@ protected static function booted(): void
 }
 endsnippet
 
-snippet boot "boot global scope" b
-/**
- * ${5:comment}
- */
-protected static function boot(): void
-{
-	parent::boot();
-
-	static::addGlobalScope('${1:nameScope}', ${2:function (Builder${3} $query) {${4}}\});
-}
-endsnippet
-
 snippet scope "local scope" b
 /**
  * ${5:comment}
@@ -358,7 +346,7 @@ snippet fillable "$fillable controll data" b
  *
  * @var array
  */
-protected $fillable = ['${1:field}'];
+protected $fillable = ['${1}'];
 endsnippet
 
 snippet table "$table set name table" b
@@ -367,42 +355,5 @@ snippet table "$table set name table" b
  *
  * @var string
  */
-protected $table = '${1:users}';
-endsnippet
-
-snippet belongsTo "blongsTo() Relation" b
-public function ${1:user}(): BelongsTo${2}
-{
-	return $this->belongsTo(${3:User}::class, '${4:user_id}');
-}
-endsnippet
-
-snippet hasMany "hasMany() Relation" b
-/**
- * ${3:comment}
- */
-public function ${1:posts}(): HasMany${2}
-{
-	return $this->hasMany(${4:Post}::class, '${5:user_id}');
-}
-endsnippet
-
-snippet belongsToMany "belongsToMany() Relation" b
-/**
- * ${3:comment}
- */
-public function ${1:tags}(): BelongsToMany${2}
-{
-	return $this->belongsToMany(${4:Tag}::class, '${5:post_tag}', '${6:post_id', '${7:tag_id}');
-}
-endsnippet
-
-snippet hasOne "hasOne() Relation" b
-/**
- * ${3:comment}
- */
-public function ${1:profile}(): HasOne${2}
-{
-¦   return $this->hasOne(${4:Tag}::class, '${5:user_id}');
-}
+protected $table = '${1}';
 endsnippet
